@@ -30,13 +30,33 @@
         <nav class="uk-navbar-container">
           <div class="uk-container">
             <div uk-navbar>
+
               <div class="uk-navbar-left">
-                <ul class="uk-navbar-nav">
-                  <li class="uk-active"><a href="#prelogue" uk-tooltip="title: A short summary of Ryan, get to know your potential employee; pos: bottom-right">Prelogue</a></li>
-                  <li><a href="#achievements" uk-tooltip="title: Some of Ryan's past achievements & experiences">Achievements</a></li>
-                  <li><a href="#toolsAndSkillsets" uk-tooltip="title: The handyman's tools">Tools & Skillsets</a></li>
-                  <li><a href="#interests" uk-tooltip="title: Find out about his interests & hobbies; pos: bottom-left">Interests</a></li>
-                </ul>
+                <span class="hide-on-big">
+                  <a
+                    class="uk-navbar-toggle-animate uk-navbar-toggle"
+                    uk-navbar-toggle-icon
+                    href="#"
+                  ></a>
+                  <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                      <li><a href="#prelogue" uk-tooltip="title: A short summary of Ryan, get to know your potential employee; pos: bottom-right">Prelogue</a></li>
+                      <li><a href="#achievements" uk-tooltip="title: Some of Ryan's past achievements & experiences">Achievements</a></li>
+                      <li><a href="#toolsAndSkillsets" uk-tooltip="title: The handyman's tools">Tools & Skillsets</a></li>
+                      <li><a href="#interests" uk-tooltip="title: Find out about his interests & hobbies; pos: bottom-left">Interests</a></li>
+                    </ul>
+                  </div>
+                </span>
+
+                <span class="hide-on-small">
+                  <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#prelogue" uk-tooltip="title: A short summary of Ryan, get to know your potential employee; pos: bottom-right">Prelogue</a></li>
+                    <li><a href="#achievements" uk-tooltip="title: Some of Ryan's past achievements & experiences">Achievements</a></li>
+                    <li><a href="#toolsAndSkillsets" uk-tooltip="title: The handyman's tools">Tools & Skillsets</a></li>
+                    <li><a href="#interests" uk-tooltip="title: Find out about his interests & hobbies; pos: bottom-left">Interests</a></li>
+                  </ul>
+                </span>
+
               </div>
             </div>
           </div>
@@ -55,31 +75,35 @@
   
             <div class="uk-align-center uk-width-1-2@m uk-card uk-card-body uk-card-default">
               
-              <div uk-grid>
+              <div class="employee-information-wrapper" uk-grid>
+
                 <div class="uk-width-2-3 uk-padding-small-top">
-                    <span class="uk-card-title uk-text-uppercase uk-margin-small-bottom" style="font-size: large;">Employee Information</span>
-                    <p>
-                      Name: Ryan Khoo <br>
-                      Age: 26 <br>
-                      Email: ryankhoo_1999@hotmail.com <br>
-                      Contact: +60122342527 <br>
-                      Role: Software Engineer <br>
-                      Years of Experience: 4+ <br>
-                      Personality Type: I/ENFJ <br>
-                    </p>
-                  </div>
-                  <div class="uk-width-1-3" style="position: relative;">
-
-                    <label class="image-flipper">
-                      <input type="checkbox" class="flip-trigger" hidden>
-                      <div class="image-container">
-                        <img src="https://itsdonburi.github.io/images/totoro.jpg" class="front-image" alt="" uk-tooltip="No, I do not resemble Totoro. I think Totoro is cute and is a perfect profile picture placeholder.">
-                        <img src="https://itsdonburi.github.io/images/me.jpg" class="back-image" alt="" uk-tooltip="Okay, now flip me back.">
-                      </div>
-                    </label>
-
-                  </div>
+                  <span class="uk-card-title uk-text-uppercase uk-margin-small-bottom" style="font-size: large;">Employee Information</span>
+                  <p>
+                    Name: Ryan Khoo <br>
+                    Age: 26 <br>
+                    Email: ryankhoo_1999@hotmail.com <br>
+                    Contact: +60122342527 <br>
+                    Role: Software Engineer <br>
+                    Years of Experience: 4+ <br>
+                    Personality Type: ISFJ-A <br>
+                  </p>
                 </div>
+
+                <div class="uk-width-1-3" style="position: relative;">
+                  <label class="image-flipper">
+                    <input type="checkbox" class="flip-trigger" hidden>
+                    <div class="image-container">
+                      <img src="https://itsdonburi.github.io/images/totoro.jpg" class="front-image" alt="" uk-tooltip="No, I do not resemble Totoro. I think Totoro is cute and is a perfect profile picture placeholder.">
+                      <div class="uk-overlay uk-position-top uk-text-center" style="color: #ffffff;">
+                        Click me
+                      </div>
+                      <img src="https://itsdonburi.github.io/images/me.jpg" class="back-image" alt="" uk-tooltip="Okay, now flip me back.">
+                    </div>
+                  </label>
+                </div>
+
+              </div>
   
             </div>
 
@@ -268,7 +292,13 @@
                       </a>
                       <div class="uk-accordion-content">
                         <p>
-                          I play the drums and occasionally teach kids. An official graduate from Trinity College London
+                          Graduating as an official Trinity College London-certified drummer has been a proud milestone in my musical journey, 
+                          one that has allowed me to merge technical discipline with creative expression. 
+                          Over the past decade, I've had the privilege of serving as a drummer for my church, where music isn't just performance—it's a form of worship, unity, and storytelling.
+                          <br>
+                          Beyond the kit, one of the most rewarding aspects has been mentoring younger drummers who share the same passion. 
+                          Teaching them rudiments, groove dynamics, and stage presence has reinforced my own understanding of rhythm while reminding me why I fell in love with drumming in the first place. 
+                          There's a special joy in watching a student progress from hesitant taps to confident, fluid playing—and knowing I played a small part in their growth.
                         </p>
                       </div>
                     </li>
@@ -281,7 +311,9 @@
                       </a>
                       <div class="uk-accordion-content">
                         <p>
-                            I started learning to gym early 2025 and am training to lead a more organized and discipline lifestyle as I learn how to have a healthier diet.
+                            Started gymming early 2025 and which has taught me to lead an organized and discipline lifestyle while reshaping my approach to heath & wellness.
+                            Committing to regular workouts instilled a sense of accountability — Showing up for myself every day
+                            required <u>planning </u>, <u>consistency</u>, and <u>mental resilience</u>.
                         </p>
                       </div>
                     </li>
@@ -293,7 +325,10 @@
                         </span>
                       </a>
                       <div class="uk-accordion-content">
-                        <p> Started climbing actively since 2019 (during tertiary education). Began with top-rope and slowly transitioned to bouldering as the years progressed.</p>
+                        <p> During my tertiary education in 2019, I began climbing actively—starting with top-rope before gradually shifting my focus to <b>bouldering</b> over the years.
+                          <br>
+                          As time passed, I found myself drawn to bouldering—a more dynamic and explosive style of climbing that relies on short, powerful sequences without ropes. The transition pushed me to develop <u>strength</u>, <u>problem-solving skills</u>, and <u>adaptability</u>, as every boulder problem became a puzzle to decode.
+                        </p>
                       </div>
                     </li>
                     <li>
@@ -304,7 +339,10 @@
                         </span>
                       </a>
                       <div class="uk-accordion-content">
-                        <p> I occasionally operate a coffee machine after weekly Sunday services which has taught me to appreciate good coffee and became a coffee connoisseur ever since!</p>
+                        <p> Operating the coffee machine after weekly Sunday services has been a small but mindful practice that unexpectedly deepened my appreciation for coffee 
+                          At first, it was just about serving a warm drink to the congregation, but as I familiarized myself with the machine—adjusting grind size, dialing in extraction times, and experimenting with milk textures—I began to notice the nuances that separate good coffee from great coffee.
+                          <br>Now, whether it’s pulling a shot of espresso or perfecting latte art, I see coffee as both a craft and a connector—a small but delightful way to bring people together. 
+                        </p>
                       </div>
                     </li>
                 </ul>
@@ -379,12 +417,14 @@
   .image-flipper {
     display: inline-block;
     position: relative;
+    max-width: inherit
   }
 
   .image-container {
     position: relative;
     width: 300px;
     height: 200px;
+    max-width: inherit;
   }
 
   .front-image, .back-image {
@@ -414,6 +454,23 @@
   .footer-social a {
     margin: 10px;
   }
+
+  .employee-information-wrapper {
+    max-width: 100%;
+  }
+
+  @media (min-width: 1025px) {
+    .hide-on-big {
+      display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .hide-on-small {
+      display: none;
+    }
+  }
+  
  
   /* #31473A, #EDF4F2 */
 </style>
