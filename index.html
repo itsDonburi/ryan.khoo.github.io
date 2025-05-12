@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Employer</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/franken-ui@1.1.0/dist/css/core.min.css"
+    />
+    <script
+      src="https://unpkg.com/franken-ui@1.1.0/dist/js/core.iife.js"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/franken-ui@1.1.0/dist/js/icon.iife.js"
+      type="module"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/franken-wc@0.0.2/dist/css/neutral.min.css"
+    />
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- HEADER START -->
+    <header>
+      <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <nav class="uk-navbar-container">
+          <div class="uk-container">
+            <div uk-navbar>
+              <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                  <li class="uk-active"><a href="#prelogue" uk-tooltip="title: A short summary of Ryan, get to know your potential employee; pos: bottom-right">Prelogue</a></li>
+                  <li><a href="#achievements" uk-tooltip="title: Some of Ryan's past achievements & experiences">Achievements</a></li>
+                  <li><a href="#toolsAndSkillsets" uk-tooltip="title: The handyman's tools">Tools & Skillsets</a></li>
+                  <li><a href="#interests" uk-tooltip="title: Find out about his interests & hobbies; pos: bottom-left">Interests</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    <main>
+      <article>
+        <div
+          class="uk-section uk-background-cover uk-section-secondary"
+        >
+          <div class="uk-container" id="prelogue">
+            <h1 class="uk-heading-small uk-margin">Prelogue</h1>
+  
+            <div class="uk-align-center uk-width-1-2@m uk-card uk-card-body uk-card-default">
+              
+              <div uk-grid>
+                <div class="uk-width-2-3 uk-padding-small-top">
+                    <span class="uk-card-title uk-text-uppercase uk-margin-small-bottom" style="font-size: large;">Employee Information</span>
+                    <p>
+                      Name: Ryan Khoo <br>
+                      Age: 26 <br>
+                      Email: ryankhoo_1999@hotmail.com <br>
+                      Contact: +60122342527 <br>
+                      Role: Software Engineer <br>
+                      Years of Experience: 4+ <br>
+                      Personality Type: I/ENFJ <br>
+                    </p>
+                  </div>
+                  <div class="uk-width-1-3" style="position: relative;">
+
+                    <label class="image-flipper">
+                      <input type="checkbox" class="flip-trigger" hidden>
+                      <div class="image-container">
+                        <img src="./totoro.jpg" class="front-image" alt="" uk-tooltip="No, I do not resemble Totoro. I think Totoro is cute and is a perfect profile picture placeholder.">
+                        <img src="./me.jpg" class="back-image" alt="" uk-tooltip="Okay, now flip me back.">
+                      </div>
+                    </label>
+
+                  </div>
+                </div>
+  
+            </div>
+
+            <div class="uk-section uk-section-default" style="padding: 0; border-radius: 20px; background: #FFFFFF; box-shadow:  0px 10px 15px 0px #cecece, 0px -10px 15px 5px #ffffff;">
+              <div class="uk-padding-medium">
+                <p>
+                  Hi! I'm a full-stack software engineer with a passion for building scalable web applications. To assist you in identifying if I align with your needs, see <u><a class="uk-link-muted" href="#toolsAndSkillsets">here</a></u>
+                  to learn more about my skillsets. I work best when both requirements & communications are clear! I have been working with Laravel framework over the past few years and am always learning new things on the way.
+                  What motivates me most about this job is not only solving complex problems but also creating impactful visuals whilst driving business growth through the power of technology.
+                  Would love to bring this same dedication and creativity to yours too. <br> Let’s take this chance & connect!
+                </p>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+        <br>
+  
+        <div
+          class="uk-section uk-background-cover uk-section-secondary"
+        >
+          <div class="uk-container" id="achievements">
+  
+            <h1 class="uk-heading-small uk-margin">Achievements</h1>
+  
+            <dl class="uk-description-list uk-description-list-divider uk-card uk-card-body uk-card-default">
+                <dt>👷 <del>Bob</del> Ryan the Builder 🔨</dt>
+                <dd>Studied and learnt the company's framework (Laravel) on-the-go and built various features within the software to accomodate client requests</dd>
+  
+                <ul class="uk-accordion" uk-accordion>
+                    <li class="uk-open">
+                      <a class="uk-accordion-title" href>
+                        Some of the key features:
+                        <span class="uk-accordion-icon">
+                          <uk-icon icon="chevron-down"></uk-icon>
+                        </span>
+                      </a>
+                      <div class="uk-accordion-content">
+                        <ul class="uk-list uk-list-disc">
+                            <li>Data-management module for user to control key data when importing data</li>
+                            <li>Collection Dashboard to monitor collection</li>
+                            <li>Collector History page</li>
+                            <li>Custom in-house site to reset locked/dormant for administration-uses</li>
+                            <li>Developed base structure in interacting with various third-party API(s)</li>
+                            <li>Built customized client reports</li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+                <dt>Team Player</dt>
+                <dd>
+                  Upon learning more about the techincalities of the company's software, I was able to comfortably assist & advise my colleagues with their roadblocks, 
+                  being able to cohesively work & communicate with the team allowed management of clients' expectations and meeting of deadlines in lieu of scope.
+                </dd>
+                <dt>Troublemaker ❌ Troubleshooter ✅</dt>
+                <dd>
+                  Person-in-charge for one of the company's software to troubleshoot, develop hotfix(es) & escalate findings to team (if needed) based on ad-hoc issues raised by support.
+                </dd>
+                <dt>Extra Mile 💪🏼</dt>
+                <dd>
+                    Took up the role & responsibility in deploying regular software updates for clients. I knew nothing about this role but
+                    took the initiative and learnt the ropes in exchange for new knowledge and skills which led to proficiency in Linux and navigating thru servers.
+                </dd>
+                <dt>Researcher 💻</dt>
+                <dd>
+                    Explored & experimented to present a POC on uses of Docker & Kubernetes during time of internship in university days.
+                </dd>
+            </dl>
+  
+          </div>
+  
+        </div>
+  
+  
+        <br>
+  
+        <div
+          class="uk-section uk-background-cover uk-section-secondary"
+        >
+            <div class="uk-container" id="toolsAndSkillsets">
+  
+                <h1 class="uk-heading-small uk-margin">Tools & Skillsets</h1>
+                <h1 class="uk-heading-divider"></h1>
+                <br>
+  
+  
+                <div uk-filter="target: .js-filter">
+                    <ul class="uk-subnav-pill uk-subnav">
+                        <li class="uk-active" uk-filter-control><a href="#">All</a></li>    
+                        <li uk-filter-control=".tag-frontend"><a href="#">Frontend</a></li>
+                        <li uk-filter-control=".tag-backend"><a href="#">Backend</a></li>
+                        <li uk-filter-control=".tag-other"><a href="#">Other</a></li>
+                    </ul>
+                    <br>
+                  
+                    <ul class="js-filter uk-child-width-1-3@m uk-text-center uk-child-width-1-2" uk-grid>
+                        <li class="tag-frontend">
+                            <div class="uk-card uk-card-body uk-card-default" uk-tooltip="HTML is like my bread, without it, there is no base">HTML</div>
+                        </li>
+                        <li class="tag-frontend">
+                            <div class="uk-card uk-card-body uk-card-default" uk-tooltip="Can't forget our butter now can we?">Javascript</div>
+                        </li>
+                        <li class="tag-frontend">
+                            <div class="uk-card uk-card-body uk-card-default" uk-tooltip="Then this must be my sugar">CSS</div>
+                        </li>
+                        <li class="tag-frontend">
+                            <div class="uk-card uk-card-body uk-card-default">jQuery</div>
+                        </li>
+                        <li class="tag-frontend">
+                            <div class="uk-card uk-card-body uk-card-default">Bootstrap</div>
+                        </li>
+                        <li class="tag-frontend">
+                            <div class="uk-card uk-card-body uk-card-default">Franken</div>
+                        </li>
+  
+  
+                        <li class="tag-backend">
+                            <div class="uk-card uk-card-body uk-card-primary">PHP</div>
+                        </li>
+                        <li class="tag-backend">
+                            <div class="uk-card uk-card-body uk-card-primary">Python</div>
+                        </li>
+                        <li class="tag-backend">
+                            <div class="uk-card uk-card-body uk-card-primary">Java</div>
+                        </li>
+                        <li class="tag-backend">
+                            <div class="uk-card uk-card-body uk-card-primary">Java</div>
+                        </li>
+                        <li class="tag-backend">
+                            <div class="uk-card uk-card-body uk-card-primary">MySQL</div>
+                        </li>
+                        <li class="tag-backend">
+                            <div class="uk-card uk-card-body uk-card-primary">Laravel</div>
+                        </li>
+  
+                        <li class="tag-other">
+                            <div class="uk-card uk-card-body uk-card-secondary" uk-tooltip="Essential for managing servers">Linux</div>
+                        </li>
+                        <li class="tag-other">
+                            <div class="uk-card uk-card-body uk-card-secondary">Shell-scripting</div>
+                        </li>
+                        <li class="tag-other">
+                            <div class="uk-card uk-card-body uk-card-secondary">Docker</div>
+                        </li>
+                        <li class="tag-other">
+                            <div class="uk-card uk-card-body uk-card-secondary" uk-tooltip="For version-controlling, gotta 'commit' to the versions you know what I'm saying?">Git/Github Desktop/Git Bash</div>
+                        </li>
+                        <li class="tag-other">
+                            <div class="uk-card uk-card-body uk-card-secondary" uk-tooltip="Well, someone's gotta test the APIs">Postman</div>
+                        </li>
+                        <li class="tag-other">
+                            <div class="uk-card uk-card-body uk-card-secondary" uk-tooltip="I only ever used this during my university days, simple & effective for visualizing data">Tableau</div>
+                        </li>
+                        <li class="tag-other">
+                            <div class="uk-card uk-card-body uk-card-secondary" uk-tooltip="Good 'ol editor">VS Code</div>
+                        </li>
+                        <li class="tag-other">
+                            <div class="uk-card uk-card-body uk-card-secondary">MySQL Workbench</div>
+                        </li>
+                        
+                    </ul>
+                </div>
+  
+            </div>
+  
+        </div>
+        <br>
+  
+        <div
+          class="uk-section uk-background-cover uk-section-secondary"
+        >
+  
+            <div class="uk-container" id="interests">
+                <h1 class="uk-heading-small uk-margin">Interests</h1>
+                <h1 class="uk-heading-divider"></h1>
+                <br>
+  
+                <ul class="uk-accordion" uk-accordion="collapsible: true; multiple: true">
+                    <li class="uk-open">
+                      <a class="uk-accordion-title" href>
+                        Drums
+                        <span class="uk-accordion-icon">
+                          <uk-icon icon="chevron-down"></uk-icon>
+                        </span>
+                      </a>
+                      <div class="uk-accordion-content">
+                        <p>
+                          I play the drums and occasionally teach kids. An official graduate from Trinity College London
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="uk-accordion-title" href>
+                        Fitness
+                        <span class="uk-accordion-icon">
+                          <uk-icon icon="chevron-down"></uk-icon>
+                        </span>
+                      </a>
+                      <div class="uk-accordion-content">
+                        <p>
+                            I started learning to gym early 2025 and am training to lead a more organized and discipline lifestyle as I learn how to have a healthier diet.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="uk-accordion-title" href>
+                        Climbing
+                        <span class="uk-accordion-icon">
+                          <uk-icon icon="chevron-down"></uk-icon>
+                        </span>
+                      </a>
+                      <div class="uk-accordion-content">
+                        <p> Started climbing actively since 2019 (during tertiary education). Began with top-rope and slowly transitioned to bouldering as the years progressed.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="uk-accordion-title" href>
+                        Caffeine
+                        <span class="uk-accordion-icon">
+                          <uk-icon icon="chevron-down"></uk-icon>
+                        </span>
+                      </a>
+                      <div class="uk-accordion-content">
+                        <p> I occasionally operate a coffee machine after weekly Sunday services which has taught me to appreciate good coffee and became a coffee connoisseur ever since!</p>
+                      </div>
+                    </li>
+                </ul>
+  
+            </div>
+        </div>
+        <a id="toTop" class="uk-align-right" href="#" uk-totop uk-tooltip="Back to top"></a>
+  
+      </article>
+    </main>
+
+    <!-- FOOTER START -->
+    <footer>
+      <div class="uk-section uk-section-primary" style="padding-bottom: 10px; padding-top: 2rem;">
+        <div class="uk-container uk-text-center">
+          <h3 class="uk-heading-small uk-margin">Let's work together!</h3>
+
+          <div class="footer-contact">
+            <a href="mailto:ryankhoo_1999@hotmail.com">ryankhoo_1999@hotmail.com</a>
+            <span> | </span>
+            <span class="footer-social">
+              <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              </a>
+              <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="#" target="_blank" aria-label="Whatsapp">
+                <i class="fa fa-mobile" aria-hidden="true"></i>
+              </a>
+            </span>
+
+          </div>
+
+
+          <!-- Copyright -->
+          <p class="footer-copyright">© <span id="year">2025</span> Ryan Khoo Lay King. All rights reserved. Powered by Franken UNO</p>          
+
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"
+  ></script>
+  <script src="./index.js"></script>
+</html>
+
+<style>
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+    #toTop > svg {
+      width: 2.5rem;
+      height: 2.5rem;
+      z-index: 1;
+      color: #31473A;
+    }
+
+    #toTop {
+      position: fixed;
+      bottom: 5%;
+      right: 5%;
+    }
+
+  .image-flipper {
+    display: inline-block;
+    position: relative;
+  }
+
+  .image-container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+  }
+
+  .front-image, .back-image {
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    backface-visibility: hidden;
+    cursor: pointer;
+  }
+
+  .back-image {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+
+  .flip-trigger:checked ~ .image-container .front-image {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+
+  .flip-trigger:checked ~ .image-container .back-image {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+
+  .footer-social a {
+    margin: 10px;
+  }
+ 
+  /* #31473A, #EDF4F2 */
+</style>
