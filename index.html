@@ -144,33 +144,41 @@
                       </a>
                       <div class="uk-accordion-content">
                         <ul class="uk-list uk-list-disc">
-                            <li>Data-management module for user to control key data when importing data</li>
-                            <li>Collection Dashboard to monitor collection</li>
-                            <li>Collector History page</li>
-                            <li>Custom in-house site to reset locked/dormant for administration-uses</li>
-                            <li>Developed base structure in interacting with various third-party API(s)</li>
-                            <li>Built customized client reports</li>
+                          <li>Customized Dashboard to monitor collection</li>
+                          <li>Customized Search Grid to display historical data</li>
+                          <li>Custom in-house site to reset locked/dormant for administration-uses</li>
+                          <li>Developed base structure in interacting with various third-party API(s)</li>
+                          <li>Built customized client reports</li>
+                          <li>Data-management module for user to control key data when importing data</li>
+                          <li>Implemented preview screen of uploaded data before data migration</li>
                         </ul>
                       </div>
                     </li>
                 </ul>
                 <dt>Team Player</dt>
                 <dd>
-                  Upon learning more about the techincalities of the company's software, I was able to comfortably assist & advise my colleagues with their roadblocks, 
-                  being able to cohesively work & communicate with the team allowed management of clients' expectations and meeting of deadlines in lieu of scope.
+                  As I deepened my understanding of the company's software and its technical intricacies, I proactively supported my colleagues by troubleshooting challenges and offering guidance to overcome roadblocks. 
+                  My ability to collaborate cohesively with the team—communicating clearly, sharing knowledge, and aligning on solutions—played a key role in managing client expectations and ensuring deadlines were met, 
+                  even when working within tight project scopes. <br> This experience reinforced my commitment to fostering a collaborative environment where teamwork drives efficiency and success.
                 </dd>
                 <dt>Troublemaker ❌ Troubleshooter ✅</dt>
                 <dd>
-                  Person-in-charge for one of the company's software to troubleshoot, develop hotfix(es) & escalate findings to team (if needed) based on ad-hoc issues raised by support.
+                  As the primary point of contact for troubleshooting one of the company's key software systems, I was responsible for diagnosing and resolving ad-hoc technical issues reported by the support team. 
+                  This involved analyzing error logs, identifying root causes, and developing immediate hotfixes to minimize downtime. When necessary, I escalated critical findings to the development team with 
+                  detailed documentation to ensure long-term resolutions. <br>My role required quick thinking, deep technical knowledge, and effective communication to maintain system stability and user satisfaction.
                 </dd>
                 <dt>Extra Mile 💪🏼</dt>
                 <dd>
-                    Took up the role & responsibility in deploying regular software updates for clients. I knew nothing about this role but
-                    took the initiative and learnt the ropes in exchange for new knowledge and skills which led to proficiency in Linux and navigating thru servers.
+                  I voluntarily took on the responsibility of deploying regular software updates for clients—a role I was initially unfamiliar with. Recognizing the importance of the task, 
+                  I proactively immersed myself in learning the required processes, tools, and best practices. Through self-guided study and hands-on experimentation, 
+                  I developed proficiency in Linux server administration, including navigating servers, executing deployment scripts, and troubleshooting issues. 
+                  <br>My commitment to mastering this responsibility not only ensured smooth and timely client updates but also expanded my technical skill set, 
+                  demonstrating my dedication to continuous learning and stepping up to challenges beyond my comfort zone.
                 </dd>
                 <dt>Researcher 💻</dt>
                 <dd>
-                    Explored & experimented to present a POC on uses of Docker & Kubernetes during time of internship in university days.
+                  During my university internship, I independently researched, explored, and experimented with containerization technologies to develop a Proof of Concept (POC) for Silverlake Symmetry, 
+                  demonstrating the potential applications of Docker and Kubernetes.
                 </dd>
             </dl>
   
@@ -285,7 +293,7 @@
                 <ul class="uk-accordion" uk-accordion="collapsible: true; multiple: true">
                     <li class="uk-open">
                       <a class="uk-accordion-title" href>
-                        Drums
+                        Drums 🥁
                         <span class="uk-accordion-icon">
                           <uk-icon icon="chevron-down"></uk-icon>
                         </span>
@@ -304,7 +312,7 @@
                     </li>
                     <li>
                       <a class="uk-accordion-title" href>
-                        Fitness
+                        Fitness 💦
                         <span class="uk-accordion-icon">
                           <uk-icon icon="chevron-down"></uk-icon>
                         </span>
@@ -319,7 +327,7 @@
                     </li>
                     <li>
                       <a class="uk-accordion-title" href>
-                        Climbing
+                        Climbing 🧗
                         <span class="uk-accordion-icon">
                           <uk-icon icon="chevron-down"></uk-icon>
                         </span>
@@ -333,7 +341,7 @@
                     </li>
                     <li>
                       <a class="uk-accordion-title" href>
-                        Caffeine
+                        Caffeine ☕
                         <span class="uk-accordion-icon">
                           <uk-icon icon="chevron-down"></uk-icon>
                         </span>
@@ -364,13 +372,13 @@
             <a href="mailto:ryankhoo_1999@hotmail.com">ryankhoo_1999@hotmail.com</a>
             <span> | </span>
             <span class="footer-social">
-              <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              <a href="https://www.linkedin.com/in/ryan-khoo-lay-king/" target="_blank" aria-label="LinkedIn" >
+                <i class="fa fa-linkedin-square" aria-hidden="true" uk-tooltip="title:https://www.linkedin.com/in/ryan-khoo-lay-king/"></i>
               </a>
-              <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+              <a href="https://itsdonburi.github.io/" target="_blank" aria-label="GitHub" uk-tooltip="title:https://itsdonburi.github.io/">
                 <i class="fa fa-github" aria-hidden="true"></i>
               </a>
-              <a href="#" target="_blank" aria-label="Whatsapp">
+              <a href="#" target="_blank" aria-label="Whatsapp" uk-tooltip="Click to copy contact number">
                 <i class="fa fa-mobile" aria-hidden="true"></i>
               </a>
             </span>
@@ -468,6 +476,10 @@
   @media (max-width: 767px) {
     .hide-on-small {
       display: none;
+    }
+    [uk-tooltip] {
+      /* Disables hover interactions */
+      pointer-events: none !important;
     }
   }
   

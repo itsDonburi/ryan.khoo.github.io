@@ -24,4 +24,18 @@
         $('nav.uk-navbar-container .uk-navbar-nav li.uk-active').removeClass('uk-active');
         $(this).parent().addClass('uk-active');
     });
+
+    document.querySelector('.footer-social > a[aria-label="Whatsapp"]').addEventListener('click', function(e) {
+        e.preventDefault();
+        const phoneNumber = '0122342527';
+        
+        navigator.clipboard.writeText(phoneNumber)
+        .then(() => {
+            UIkit.notification({message:`<div class='uk-flex uk-flex-middle'><span class='uk-flex-none uk-margin-small-right'><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6fcb6f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><path d="M20 6 9 17l-5-5"/></svg></span>Mobile nuber copied to clipboard!</div>`, timeout:5000, pos:'top-right'});
+        })
+        .catch(err => {
+            console.error('Copy failed:', err);
+        });
+    });
+
 }())
