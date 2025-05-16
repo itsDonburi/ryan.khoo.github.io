@@ -38,4 +38,17 @@
         });
     });
 
+    document.querySelector('.image-container-small').addEventListener('click', function() {
+        const img1 = document.getElementById('img1');
+        const img2 = document.getElementById('img2');
+        
+        if (img1.classList.contains('visible')) {
+            img1.classList.remove('visible');
+            img2.classList.add('visible');
+        } else {
+            img2.classList.remove('visible');
+            img1.classList.add('visible');
+        }
+    });
+
 }())

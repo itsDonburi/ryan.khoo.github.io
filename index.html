@@ -40,10 +40,10 @@
                   ></a>
                   <div class="uk-navbar-dropdown">
                     <ul class="uk-nav uk-navbar-dropdown-nav">
-                      <li><a href="#prelogue" uk-tooltip="title: A short summary of Ryan, get to know your potential employee; pos: bottom-right">Prelogue</a></li>
-                      <li><a href="#achievements" uk-tooltip="title: Some of Ryan's past achievements & experiences">Achievements</a></li>
-                      <li><a href="#toolsAndSkillsets" uk-tooltip="title: The handyman's tools">Tools & Skillsets</a></li>
-                      <li><a href="#interests" uk-tooltip="title: Find out about his interests & hobbies; pos: bottom-left">Interests</a></li>
+                      <li><a href="#prelogue">Prelogue</a></li>
+                      <li><a href="#achievements">Achievements</a></li>
+                      <li><a href="#toolsAndSkillsets">Tools & Skillsets</a></li>
+                      <li><a href="#interests">Interests</a></li>
                     </ul>
                   </div>
                 </span>
@@ -72,8 +72,87 @@
         >
           <div class="uk-container" id="prelogue">
             <h1 class="uk-heading-small uk-margin">Prelogue</h1>
-  
-            <div class="uk-align-center uk-width-1-2@m uk-card uk-card-body uk-card-default">
+            
+            <!-- Employee Information Card on Small devices START -->
+            <div class="image-container-small uk-align-center uk-card uk-card-body uk-card-default employee-information-wrapper-small hide-on-big" style="width: 100%; height: 100%; position: relative;">
+                <img id="img1" src="https://itsdonburi.github.io/images/totoro.jpg" class="visible">
+                <img id="img2" src="https://itsdonburi.github.io/images/me.jpg">
+
+                <div class="uk-flex" style="margin-top: 1.5rem;">
+                  <div class="uk-width-1-4" style="padding-top: .25rem; padding-bottom: .25rem;">Name:</div>
+                  <div class="uk-margin-left uk-width-3-4">
+                    <input
+                      class="uk-input"
+                      type="text"
+                      value="Ryan Khoo"
+                      readonly
+                      aria-readonly=""
+                    />
+                  </div>
+                </div>
+                <div class="uk-flex">
+                  <div class="uk-width-1-4" style="padding-top: .25rem; padding-bottom: .25rem;">Role:</div>
+                  <div class="uk-margin-left uk-width-3-4">
+                    <input
+                      class="uk-input"
+                      type="text"
+                      value="Software Engineer"
+                      readonly
+                      aria-readonly=""
+                    />
+                  </div>
+                </div>
+                <div class="uk-flex">
+                  <div class="uk-width-1-4" style="padding-top: .25rem; padding-bottom: .25rem;">Experience:</div>
+                  <div class="uk-margin-left uk-width-3-4">
+                    <input
+                      class="uk-input"
+                      type="text"
+                      value="4+ years"
+                      readonly
+                      aria-readonly=""
+                    />
+                  </div>
+                </div>
+                <div class="uk-flex">
+                  <div class="uk-width-1-4" style="padding-top: .25rem; padding-bottom: .25rem;">Email:</div>
+                  <div class="uk-margin-left uk-width-3-4">
+                    <input
+                      class="uk-input"
+                      type="text"
+                      value="ryankhoo_1999@hotmail.com"
+                      readonly
+                      aria-readonly=""
+                    />
+                  </div>
+                </div>
+                <div class="uk-flex">
+                  <div class="uk-width-1-4" style="padding-top: .25rem; padding-bottom: .25rem;">Contact:</div>
+                  <div class="uk-margin-left uk-width-3-4">
+                    <input
+                      class="uk-input"
+                      type="text"
+                      value="+60122342527"
+                      readonly
+                      aria-readonly=""
+                    />
+                  </div>
+                </div>
+
+                <div class="uk-flex-inline employee-characteristics-wrapper">
+                  <div>
+                    <span class="uk-label uk-label-primary">ISFJ-A</span>
+                    <span class="uk-label uk-label-secondary">Male</span>
+                    <span class="uk-label uk-label">Christian</span>
+                    <span class="uk-label uk-primary">21/09/1999</span>
+                    <span class="uk-label uk-label-secondary">Chinese</span>
+                  </div>
+                </div>
+            </div>
+            <!-- Employee Information Card on Small devices END -->
+            
+            <!-- Employee Information Card on Big devices START -->
+            <div class="uk-align-center uk-width-1-2@m uk-card uk-card-body uk-card-default hide-on-small">
               
               <div class="employee-information-wrapper" uk-grid>
 
@@ -106,6 +185,7 @@
               </div>
   
             </div>
+            <!-- Employee Information Card on Big devices END -->
 
             <div class="uk-section uk-section-default" style="padding: 0; border-radius: 20px; background: #FFFFFF; box-shadow:  0px 10px 15px 0px #cecece, 0px -10px 15px 5px #ffffff;">
               <div class="uk-padding-medium">
@@ -357,7 +437,8 @@
   
             </div>
         </div>
-        <a id="toTop" class="uk-align-right" href="#" uk-totop uk-tooltip="Back to top"></a>
+        <a id="toTop" class="uk-align-right" href="#" uk-totop></a>
+        <a id="toTop" class="uk-align-right hide-on-small" href="#" uk-totop uk-tooltip="Back to top"></a>
   
       </article>
     </main>
@@ -467,7 +548,7 @@
     max-width: 100%;
   }
 
-  @media (min-width: 1025px) {
+  @media (min-width: 768px) {
     .hide-on-big {
       display: none;
     }
@@ -482,7 +563,42 @@
       pointer-events: none !important;
     }
   }
-  
+
+  #img1 {
+    width: 100%; 
+    height: 100%;
+  }
+
+  #img2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: inherit;
+    width: 100%;
+  }
+
+  .image-container-small img {
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .image-container-small img:not(.visible) {
+    opacity: 0;
+  }
+
+  .employee-information-wrapper-small div.uk-grid {
+    margin-top: .5rem !important;
+  }
+
+  .employee-characteristics-wrapper {
+    margin-top: 1rem;
+  }
+
+  .employee-characteristics-wrapper span{
+    margin-left: .25rem;
+    margin-right: .25rem;
+    margin-top: .75rem;
+  }
+
  
   /* #31473A, #EDF4F2 */
 </style>
