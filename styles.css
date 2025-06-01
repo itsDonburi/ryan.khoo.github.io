@@ -1,0 +1,208 @@
+.karla {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #f5f5f5;
+    --divider: #ececec;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    background-color: var(--primary-color);
+}
+
+.prelogue-wrapper input {
+    border: solid 1px lightgray;
+}
+
+#prelogue .uk-card,
+#achievements dl {
+    border: none;
+    background: white;
+}
+
+#achievements dt {
+    font-weight: bold;
+}
+
+.uk-tooltip.uk-active {
+    background: black;
+    color: white;
+}
+
+#toTop>svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    z-index: 1;
+    color: #31473a;
+}
+
+#toTop {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+
+.image-flipper {
+    display: inline-block;
+    position: relative;
+    max-width: inherit;
+}
+
+.image-container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    max-width: inherit;
+}
+
+.front-image,
+.back-image {
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    backface-visibility: hidden;
+    cursor: pointer;
+}
+
+.back-image {
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+
+.flip-trigger:checked~.image-container .front-image {
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+
+.flip-trigger:checked~.image-container .back-image {
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+
+.footer-social a {
+    margin: 10px;
+}
+
+.employee-information-wrapper {
+    max-width: 100%;
+}
+
+nav.uk-navbar-container {
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .hide-on-big {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .hide-on-small {
+        display: none;
+    }
+
+    [uk-tooltip] {
+        /* Disables hover interactions */
+        pointer-events: none !important;
+    }
+}
+
+#img1 {
+    width: 100%;
+    height: 100%;
+}
+
+#img2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: inherit;
+    width: 100%;
+}
+
+.image-container-small img {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.image-container-small img:not(.visible) {
+    opacity: 0;
+}
+
+.employee-information-wrapper-small div.uk-grid {
+    margin-top: 0.5rem !important;
+}
+
+.employee-characteristics-wrapper {
+    margin-top: 1rem;
+}
+
+.employee-characteristics-wrapper span {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    margin-top: 0.75rem;
+}
+
+.uk-description-list-divider>dt:nth-child(n + 2) {
+    border-color: var(--divider);
+}
+
+#achievements .uk-accordion>li {
+    border: none;
+}
+
+.uk-navbar-dropdown.uk-drop.uk-open {
+    background-color: white;
+    border: none;
+}
+
+.uk-nav.uk-navbar-dropdown-nav li:hover a {
+    background-color: var(--primary-color);
+}
+
+#interests ul.uk-accordion>li {
+    border-color: #bbbbbb;
+}
+
+/* TOOLS & SKILLSET START */
+li.tag-frontend>div.uk-card {
+    background-color: #ffffff;
+    border: none;
+}
+
+li.tag-backend>div.uk-card {
+    background-color: #000000;
+    border: none;
+    color: #ffffff;
+}
+
+li.tag-other>div.uk-card {
+    background-color: var(--primary-color);
+    border-width: 0.1px;
+    border-color: darkgray;
+    border-style: solid;
+}
+
+/* TOOLS & SKILLSET END */
+
+/* FOOTER START */
+
+footer {
+    background-color: #000000;
+    color: white;
+}
+
+/* FOOTER END */

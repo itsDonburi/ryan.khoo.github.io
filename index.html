@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Employer</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/franken-ui@1.1.0/dist/css/core.min.css"
-    />
+
     <script
       src="https://unpkg.com/franken-ui@1.1.0/dist/js/core.iife.js"
       type="module"
@@ -19,18 +16,30 @@
 
     <link
       rel="stylesheet"
-      href="https://unpkg.com/franken-wc@0.0.2/dist/css/neutral.min.css"
+      href="https://unpkg.com/franken-ui@1.1.0/dist/css/core.min.css"
     />
-    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link
+      rel="stylesheet"
+      href="./font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <!-- HEADER START -->
     <header>
-      <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+      <div
+        uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky"
+      >
         <nav class="uk-navbar-container">
           <div class="uk-container">
             <div uk-navbar>
-
               <div class="uk-navbar-left">
                 <span class="hide-on-big">
                   <a
@@ -42,7 +51,9 @@
                     <ul class="uk-nav uk-navbar-dropdown-nav">
                       <li><a href="#prelogue">Prelogue</a></li>
                       <li><a href="#achievements">Achievements</a></li>
-                      <li><a href="#toolsAndSkillsets">Tools & Skillsets</a></li>
+                      <li>
+                        <a href="#toolsAndSkillsets">Tools & Skillsets</a>
+                      </li>
                       <li><a href="#interests">Interests</a></li>
                     </ul>
                   </div>
@@ -50,13 +61,36 @@
 
                 <span class="hide-on-small">
                   <ul class="uk-navbar-nav">
-                    <li class="uk-active"><a href="#prelogue" uk-tooltip="title: A short summary of Ryan, get to know your potential employee; pos: bottom-right">Prelogue</a></li>
-                    <li><a href="#achievements" uk-tooltip="title: Some of Ryan's past achievements & experiences">Achievements</a></li>
-                    <li><a href="#toolsAndSkillsets" uk-tooltip="title: The handyman's tools">Tools & Skillsets</a></li>
-                    <li><a href="#interests" uk-tooltip="title: Find out about his interests & hobbies; pos: bottom-left">Interests</a></li>
+                    <li class="uk-active">
+                      <a
+                        href="#prelogue"
+                        uk-tooltip="title: A short summary of Ryan, get to know your potential employee; pos: bottom-right"
+                        >Prelogue</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#achievements"
+                        uk-tooltip="title: Some of Ryan's past achievements & experiences"
+                        >Achievements</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#toolsAndSkillsets"
+                        uk-tooltip="title: The handyman's tools"
+                        >Tools & Skillsets</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#interests"
+                        uk-tooltip="title: Find out about his interests & hobbies; pos: bottom-left"
+                        >Interests</a
+                      >
+                    </li>
                   </ul>
                 </span>
-
               </div>
             </div>
           </div>
@@ -67,19 +101,30 @@
 
     <main>
       <article>
-        <div
-          class="uk-section uk-background-cover uk-section-secondary"
-        >
+        <div class="uk-section uk-background-cover uk-section-secondary">
           <div class="uk-container" id="prelogue">
             <h1 class="uk-heading-small uk-margin">Prelogue</h1>
-            
-            <!-- Employee Information Card on Small devices START -->
-            <div class="image-container-small uk-align-center uk-card uk-card-body uk-card-default employee-information-wrapper-small hide-on-big" style="width: 100%; height: 100%; position: relative;">
-                <img id="img1" src="https://itsdonburi.github.io/images/totoro.jpg" class="visible">
-                <img id="img2" src="https://itsdonburi.github.io/images/me.jpg">
 
-                <div class="uk-flex" style="margin-top: 1.5rem;">
-                  <div class="uk-width-1-4" style="padding-top: .25rem; padding-bottom: .25rem;">Name:</div>
+            <!-- Employee Information Card on Small devices START -->
+            <div
+              class="image-container-small uk-align-center uk-card uk-card-body uk-card-default employee-information-wrapper-small hide-on-big"
+              style="width: 100%; height: 100%; position: relative"
+            >
+              <img
+                id="img1"
+                src="https://itsdonburi.github.io/images/totoro.jpg"
+                class="visible"
+              />
+              <img id="img2" src="https://itsdonburi.github.io/images/me.jpg" />
+
+              <span class="prelogue-wrapper">
+                <div class="uk-flex" style="margin-top: 1.5rem">
+                  <div
+                    class="uk-width-1-4"
+                    style="padding-top: 0.25rem; padding-bottom: 0.25rem"
+                  >
+                    Name:
+                  </div>
                   <div class="uk-margin-left uk-width-3-4">
                     <input
                       class="uk-input"
@@ -91,7 +136,12 @@
                   </div>
                 </div>
                 <div class="uk-flex">
-                  <div class="uk-width-1-4" style="padding-top: .25rem; padding-bottom: .25rem;">Role:</div>
+                  <div
+                    class="uk-width-1-4"
+                    style="padding-top: 0.25rem; padding-bottom: 0.25rem"
+                  >
+                    Role:
+                  </div>
                   <div class="uk-margin-left uk-width-3-4">
                     <input
                       class="uk-input"
@@ -103,7 +153,12 @@
                   </div>
                 </div>
                 <div class="uk-flex">
-                  <div class="uk-width-1-4" style="padding-top: .25rem; padding-bottom: .25rem;">Experience:</div>
+                  <div
+                    class="uk-width-1-4"
+                    style="padding-top: 0.25rem; padding-bottom: 0.25rem"
+                  >
+                    Experience:
+                  </div>
                   <div class="uk-margin-left uk-width-3-4">
                     <input
                       class="uk-input"
@@ -115,7 +170,12 @@
                   </div>
                 </div>
                 <div class="uk-flex">
-                  <div class="uk-width-1-4" style="padding-top: .25rem; padding-bottom: .25rem;">Email:</div>
+                  <div
+                    class="uk-width-1-4"
+                    style="padding-top: 0.25rem; padding-bottom: 0.25rem"
+                  >
+                    Email:
+                  </div>
                   <div class="uk-margin-left uk-width-3-4">
                     <input
                       class="uk-input"
@@ -127,7 +187,12 @@
                   </div>
                 </div>
                 <div class="uk-flex">
-                  <div class="uk-width-1-4" style="padding-top: .25rem; padding-bottom: .25rem;">Contact:</div>
+                  <div
+                    class="uk-width-1-4"
+                    style="padding-top: 0.25rem; padding-bottom: 0.25rem"
+                  >
+                    Contact:
+                  </div>
                   <div class="uk-margin-left uk-width-3-4">
                     <input
                       class="uk-input"
@@ -138,338 +203,519 @@
                     />
                   </div>
                 </div>
+              </span>
 
-                <div class="uk-flex-inline employee-characteristics-wrapper">
-                  <div>
-                    <span class="uk-label uk-label-primary">ISFJ-A</span>
-                    <span class="uk-label uk-label-secondary">Male</span>
-                    <span class="uk-label uk-label">Christian</span>
-                    <span class="uk-label uk-primary">21/09/1999</span>
-                    <span class="uk-label uk-label-secondary">Chinese</span>
-                  </div>
+              <div class="uk-flex-inline employee-characteristics-wrapper">
+                <div>
+                  <span class="uk-label uk-label-primary">ISFJ-A</span>
+                  <span class="uk-label uk-label-secondary">Male</span>
+                  <span class="uk-label uk-label">Christian</span>
+                  <span class="uk-label uk-primary">21/09/1999</span>
+                  <span class="uk-label uk-label-secondary">Chinese</span>
                 </div>
+              </div>
             </div>
             <!-- Employee Information Card on Small devices END -->
-            
-            <!-- Employee Information Card on Big devices START -->
-            <div class="uk-align-center uk-width-1-2@m uk-card uk-card-body uk-card-default hide-on-small">
-              
-              <div class="employee-information-wrapper" uk-grid>
 
+            <!-- Employee Information Card on Big devices START -->
+            <div
+              class="uk-align-center uk-width-1-2@m uk-card uk-card-body uk-card-default hide-on-small"
+            >
+              <div class="employee-information-wrapper" uk-grid>
                 <div class="uk-width-2-3 uk-padding-small-top">
-                  <span class="uk-card-title uk-text-uppercase uk-margin-small-bottom" style="font-size: large;">Employee Information</span>
+                  <span
+                    class="uk-card-title uk-text-uppercase uk-margin-small-bottom"
+                    style="font-size: large"
+                    >Employee Information</span
+                  >
                   <p>
-                    Name: Ryan Khoo <br>
-                    Age: 26 <br>
-                    Email: ryankhoo_1999@hotmail.com <br>
-                    Contact: +60122342527 <br>
-                    Role: Software Engineer <br>
-                    Years of Experience: 4+ <br>
-                    Personality Type: ISFJ-A <br>
+                    Name: Ryan Khoo <br />
+                    Age: 26 <br />
+                    Email: ryankhoo_1999@hotmail.com <br />
+                    Contact: +60122342527 <br />
+                    Role: Software Engineer <br />
+                    Years of Experience: 4+ <br />
+                    Personality Type: ISFJ-A <br />
                   </p>
                 </div>
 
-                <div class="uk-width-1-3" style="position: relative;">
+                <div class="uk-width-1-3" style="position: relative">
                   <label class="image-flipper">
-                    <input type="checkbox" class="flip-trigger" hidden>
+                    <input type="checkbox" class="flip-trigger" hidden />
                     <div class="image-container">
-                      <img src="https://itsdonburi.github.io/images/totoro.jpg" class="front-image" alt="" uk-tooltip="No, I do not resemble Totoro. I think Totoro is cute and is a perfect profile picture placeholder.">
-                      <div class="uk-overlay uk-position-top uk-text-center" style="color: #ffffff;">
+                      <img
+                        src="https://itsdonburi.github.io/images/totoro.jpg"
+                        class="front-image"
+                        alt=""
+                        uk-tooltip="No, I do not resemble Totoro. I think Totoro is cute and is a perfect profile picture placeholder."
+                      />
+                      <div
+                        class="uk-overlay uk-position-top uk-text-center"
+                        style="color: #ffffff"
+                      >
                         Click me
                       </div>
-                      <img src="https://itsdonburi.github.io/images/me.jpg" class="back-image" alt="" uk-tooltip="Okay, now flip me back.">
+                      <img
+                        src="https://itsdonburi.github.io/images/me.jpg"
+                        class="back-image"
+                        alt=""
+                        uk-tooltip="Okay, now flip me back."
+                      />
                     </div>
                   </label>
                 </div>
-
               </div>
-  
             </div>
             <!-- Employee Information Card on Big devices END -->
 
-            <div class="uk-section uk-section-default" style="padding: 0; border-radius: 20px; background: #FFFFFF; box-shadow:  0px 10px 15px 0px #cecece, 0px -10px 15px 5px #ffffff;">
+            <div
+              class="uk-section uk-section-default"
+              style="
+                padding: 0;
+                border-radius: 20px;
+                background: #ffffff;
+                box-shadow: 0px 10px 15px 0px #cecece,
+                  0px -10px 15px 5px #ffffff;
+              "
+            >
               <div class="uk-padding-medium">
                 <p>
-                  Hi! I'm a full-stack software engineer with a passion for building scalable web applications. To assist you in identifying if I align with your needs, see <u><a class="uk-link-muted" href="#toolsAndSkillsets">here</a></u>
-                  to learn more about my skillsets. I work best when both requirements & communications are clear! I have been working with Laravel framework over the past few years and am always learning new things on the way.
-                  What motivates me most about this job is not only solving complex problems but also creating impactful visuals whilst driving business growth through the power of technology.
-                  Would love to bring this same dedication and creativity to yours too. <br> Let’s take this chance & connect!
+                  Hi! I'm a full-stack software engineer with a passion for
+                  building scalable web applications. To assist you in
+                  identifying if I align with your needs, see
+                  <u
+                    ><a class="uk-link-muted" href="#toolsAndSkillsets"
+                      >here</a
+                    ></u
+                  >
+                  to learn more about my skillsets. I work best when both
+                  requirements & communications are clear! I have been working
+                  with Laravel framework over the past few years and am always
+                  learning new things on the way. What motivates me most about
+                  this job is not only solving complex problems but also
+                  creating impactful visuals whilst driving business growth
+                  through the power of technology. Would love to bring this same
+                  dedication and creativity to yours too. <br />
+                  Let’s take this chance & connect!
                 </p>
               </div>
             </div>
           </div>
-  
         </div>
-  
-        <br>
-  
-        <div
-          class="uk-section uk-background-cover uk-section-secondary"
-        >
+
+        <br />
+
+        <div class="uk-section uk-background-cover uk-section-secondary">
           <div class="uk-container" id="achievements">
-  
             <h1 class="uk-heading-small uk-margin">Achievements</h1>
-  
-            <dl class="uk-description-list uk-description-list-divider uk-card uk-card-body uk-card-default">
-                <dt>👷 <del>Bob</del> Ryan the Builder 🔨</dt>
-                <dd>Studied and learnt the company's framework (Laravel) on-the-go and built various features within the software to accomodate client requests</dd>
-  
-                <ul class="uk-accordion" uk-accordion>
-                    <li class="uk-open">
-                      <a class="uk-accordion-title" href>
-                        Some of the key features:
-                        <span class="uk-accordion-icon">
-                          <uk-icon icon="chevron-down"></uk-icon>
-                        </span>
-                      </a>
-                      <div class="uk-accordion-content">
-                        <ul class="uk-list uk-list-disc">
-                          <li>Customized Dashboard to monitor collection</li>
-                          <li>Customized Search Grid to display historical data</li>
-                          <li>Custom in-house site to reset locked/dormant for administration-uses</li>
-                          <li>Developed base structure in interacting with various third-party API(s)</li>
-                          <li>Built customized client reports</li>
-                          <li>Data-management module for user to control key data when importing data</li>
-                          <li>Implemented preview screen of uploaded data before data migration</li>
-                        </ul>
-                      </div>
-                    </li>
-                </ul>
-                <dt>Team Player</dt>
-                <dd>
-                  As I deepened my understanding of the company's software and its technical intricacies, I proactively supported my colleagues by troubleshooting challenges and offering guidance to overcome roadblocks. 
-                  My ability to collaborate cohesively with the team—communicating clearly, sharing knowledge, and aligning on solutions—played a key role in managing client expectations and ensuring deadlines were met, 
-                  even when working within tight project scopes. <br> This experience reinforced my commitment to fostering a collaborative environment where teamwork drives efficiency and success.
-                </dd>
-                <dt>Troublemaker ❌ Troubleshooter ✅</dt>
-                <dd>
-                  As the primary point of contact for troubleshooting one of the company's key software systems, I was responsible for diagnosing and resolving ad-hoc technical issues reported by the support team. 
-                  This involved analyzing error logs, identifying root causes, and developing immediate hotfixes to minimize downtime. When necessary, I escalated critical findings to the development team with 
-                  detailed documentation to ensure long-term resolutions. <br>My role required quick thinking, deep technical knowledge, and effective communication to maintain system stability and user satisfaction.
-                </dd>
-                <dt>Extra Mile 💪🏼</dt>
-                <dd>
-                  I voluntarily took on the responsibility of deploying regular software updates for clients—a role I was initially unfamiliar with. Recognizing the importance of the task, 
-                  I proactively immersed myself in learning the required processes, tools, and best practices. Through self-guided study and hands-on experimentation, 
-                  I developed proficiency in Linux server administration, including navigating servers, executing deployment scripts, and troubleshooting issues. 
-                  <br>My commitment to mastering this responsibility not only ensured smooth and timely client updates but also expanded my technical skill set, 
-                  demonstrating my dedication to continuous learning and stepping up to challenges beyond my comfort zone.
-                </dd>
-                <dt>Researcher 💻</dt>
-                <dd>
-                  During my university internship, I independently researched, explored, and experimented with containerization technologies to develop a Proof of Concept (POC) for Silverlake Symmetry, 
-                  demonstrating the potential applications of Docker and Kubernetes.
-                </dd>
+
+            <dl
+              class="uk-description-list uk-description-list-divider uk-card uk-card-body uk-card-default"
+            >
+              <dt>👷 <del>Bob</del> Ryan the Builder 🔨</dt>
+              <dd>
+                Studied and learnt the company's framework (Laravel) on-the-go
+                and built various features within the software to accomodate
+                client requests
+              </dd>
+
+              <ul class="uk-accordion" uk-accordion>
+                <li class="uk-open">
+                  <a class="uk-accordion-title" href>
+                    Some of the key features:
+                    <span class="uk-accordion-icon">
+                      <uk-icon icon="chevron-down"></uk-icon>
+                    </span>
+                  </a>
+                  <div class="uk-accordion-content">
+                    <ul class="uk-list uk-list-disc">
+                      <li>Customized Dashboard to monitor collection</li>
+                      <li>Customized Search Grid to display historical data</li>
+                      <li>
+                        Custom in-house site to reset locked/dormant for
+                        administration-uses
+                      </li>
+                      <li>
+                        Developed base structure in interacting with various
+                        third-party API(s)
+                      </li>
+                      <li>Built customized client reports</li>
+                      <li>
+                        Data-management module for user to control key data when
+                        importing data
+                      </li>
+                      <li>
+                        Implemented preview screen of uploaded data before data
+                        migration
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <dt>Team Player</dt>
+              <dd>
+                As I deepened my understanding of the company's software and its
+                technical intricacies, I proactively supported my colleagues by
+                troubleshooting challenges and offering guidance to overcome
+                roadblocks. My ability to collaborate cohesively with the
+                team—communicating clearly, sharing knowledge, and aligning on
+                solutions—played a key role in managing client expectations and
+                ensuring deadlines were met, even when working within tight
+                project scopes. <br />
+                This experience reinforced my commitment to fostering a
+                collaborative environment where teamwork drives efficiency and
+                success.
+              </dd>
+              <dt>Troublemaker ❌ Troubleshooter ✅</dt>
+              <dd>
+                As the primary point of contact for troubleshooting one of the
+                company's key software systems, I was responsible for diagnosing
+                and resolving ad-hoc technical issues reported by the support
+                team. This involved analyzing error logs, identifying root
+                causes, and developing immediate hotfixes to minimize downtime.
+                When necessary, I escalated critical findings to the development
+                team with detailed documentation to ensure long-term
+                resolutions. <br />My role required quick thinking, deep
+                technical knowledge, and effective communication to maintain
+                system stability and user satisfaction.
+              </dd>
+              <dt>Extra Mile 💪🏼</dt>
+              <dd>
+                I voluntarily took on the responsibility of deploying regular
+                software updates for clients—a role I was initially unfamiliar
+                with. Recognizing the importance of the task, I proactively
+                immersed myself in learning the required processes, tools, and
+                best practices. Through self-guided study and hands-on
+                experimentation, I developed proficiency in Linux server
+                administration, including navigating servers, executing
+                deployment scripts, and troubleshooting issues.
+                <br />My commitment to mastering this responsibility not only
+                ensured smooth and timely client updates but also expanded my
+                technical skill set, demonstrating my dedication to continuous
+                learning and stepping up to challenges beyond my comfort zone.
+              </dd>
+              <dt>Researcher 💻</dt>
+              <dd>
+                During my university internship, I independently researched,
+                explored, and experimented with containerization technologies to
+                develop a Proof of Concept (POC) for Silverlake Symmetry,
+                demonstrating the potential applications of Docker and
+                Kubernetes.
+              </dd>
             </dl>
-  
           </div>
-  
         </div>
-  
-  
-        <br>
-  
-        <div
-          class="uk-section uk-background-cover uk-section-secondary"
-        >
-            <div class="uk-container" id="toolsAndSkillsets">
-  
-                <h1 class="uk-heading-small uk-margin">Tools & Skillsets</h1>
-                <h1 class="uk-heading-divider"></h1>
-                <br>
-  
-  
-                <div uk-filter="target: .js-filter">
-                    <ul class="uk-subnav-pill uk-subnav">
-                        <li class="uk-active" uk-filter-control><a href="#">All</a></li>    
-                        <li uk-filter-control=".tag-frontend"><a href="#">Frontend</a></li>
-                        <li uk-filter-control=".tag-backend"><a href="#">Backend</a></li>
-                        <li uk-filter-control=".tag-other"><a href="#">Other</a></li>
-                    </ul>
-                    <br>
-                  
-                    <ul class="js-filter uk-child-width-1-3@m uk-text-center uk-child-width-1-2" uk-grid>
-                        <li class="tag-frontend">
-                            <div class="uk-card uk-card-body uk-card-default" uk-tooltip="HTML is like my bread, without it, there is no base">HTML</div>
-                        </li>
-                        <li class="tag-frontend">
-                            <div class="uk-card uk-card-body uk-card-default" uk-tooltip="Can't forget our butter now can we?">Javascript</div>
-                        </li>
-                        <li class="tag-frontend">
-                            <div class="uk-card uk-card-body uk-card-default" uk-tooltip="Then this must be my sugar">CSS</div>
-                        </li>
-                        <li class="tag-frontend">
-                            <div class="uk-card uk-card-body uk-card-default">jQuery</div>
-                        </li>
-                        <li class="tag-frontend">
-                            <div class="uk-card uk-card-body uk-card-default">Bootstrap</div>
-                        </li>
-                        <li class="tag-frontend">
-                            <div class="uk-card uk-card-body uk-card-default">Franken</div>
-                        </li>
-  
-  
-                        <li class="tag-backend">
-                            <div class="uk-card uk-card-body uk-card-primary">PHP</div>
-                        </li>
-                        <li class="tag-backend">
-                            <div class="uk-card uk-card-body uk-card-primary">Python</div>
-                        </li>
-                        <li class="tag-backend">
-                            <div class="uk-card uk-card-body uk-card-primary">Java</div>
-                        </li>
-                        <li class="tag-backend">
-                            <div class="uk-card uk-card-body uk-card-primary">Java</div>
-                        </li>
-                        <li class="tag-backend">
-                            <div class="uk-card uk-card-body uk-card-primary">MySQL</div>
-                        </li>
-                        <li class="tag-backend">
-                            <div class="uk-card uk-card-body uk-card-primary">Laravel</div>
-                        </li>
-  
-                        <li class="tag-other">
-                            <div class="uk-card uk-card-body uk-card-secondary" uk-tooltip="Essential for managing servers">Linux</div>
-                        </li>
-                        <li class="tag-other">
-                            <div class="uk-card uk-card-body uk-card-secondary">Shell-scripting</div>
-                        </li>
-                        <li class="tag-other">
-                            <div class="uk-card uk-card-body uk-card-secondary">Docker</div>
-                        </li>
-                        <li class="tag-other">
-                            <div class="uk-card uk-card-body uk-card-secondary" uk-tooltip="For version-controlling, gotta 'commit' to the versions you know what I'm saying?">Git/Github Desktop/Git Bash</div>
-                        </li>
-                        <li class="tag-other">
-                            <div class="uk-card uk-card-body uk-card-secondary" uk-tooltip="Well, someone's gotta test the APIs">Postman</div>
-                        </li>
-                        <li class="tag-other">
-                            <div class="uk-card uk-card-body uk-card-secondary" uk-tooltip="I only ever used this during my university days, simple & effective for visualizing data">Tableau</div>
-                        </li>
-                        <li class="tag-other">
-                            <div class="uk-card uk-card-body uk-card-secondary" uk-tooltip="Good 'ol editor">VS Code</div>
-                        </li>
-                        <li class="tag-other">
-                            <div class="uk-card uk-card-body uk-card-secondary">MySQL Workbench</div>
-                        </li>
-                        
-                    </ul>
+
+        <br />
+
+        <div class="uk-section uk-background-cover uk-section-secondary">
+          <div class="uk-container" id="toolsAndSkillsets">
+            <h1 class="uk-heading-small uk-margin">Tools & Skillsets</h1>
+            <h1 class="uk-heading-divider"></h1>
+            <br />
+
+            <div uk-filter="target: .js-filter">
+              <ul class="uk-subnav-pill uk-subnav">
+                <li class="uk-active" uk-filter-control><a href="#">All</a></li>
+                <li uk-filter-control=".tag-frontend">
+                  <a href="#">Frontend</a>
+                </li>
+                <li uk-filter-control=".tag-backend">
+                  <a href="#">Backend</a>
+                </li>
+                <li uk-filter-control=".tag-other"><a href="#">Other</a></li>
+              </ul>
+              <br />
+
+              <ul
+                class="js-filter uk-child-width-1-3@m uk-text-center uk-child-width-1-2"
+                uk-grid
+              >
+                <li class="tag-frontend">
+                  <div
+                    class="uk-card uk-card-body uk-card-default"
+                    uk-tooltip="HTML is like my bread, without it, there is no base"
+                  >
+                    HTML
+                  </div>
+                </li>
+                <li class="tag-frontend">
+                  <div
+                    class="uk-card uk-card-body uk-card-default"
+                    uk-tooltip="Can't forget our butter now can we?"
+                  >
+                    Javascript
+                  </div>
+                </li>
+                <li class="tag-frontend">
+                  <div
+                    class="uk-card uk-card-body uk-card-default"
+                    uk-tooltip="Then this must be my sugar"
+                  >
+                    CSS
+                  </div>
+                </li>
+                <li class="tag-frontend">
+                  <div class="uk-card uk-card-body uk-card-default">jQuery</div>
+                </li>
+                <li class="tag-frontend">
+                  <div class="uk-card uk-card-body uk-card-default">
+                    Bootstrap
+                  </div>
+                </li>
+                <li class="tag-frontend">
+                  <div class="uk-card uk-card-body uk-card-default">
+                    Franken
+                  </div>
+                </li>
+
+                <li class="tag-backend">
+                  <div class="uk-card uk-card-body uk-card-primary">PHP</div>
+                </li>
+                <li class="tag-backend">
+                  <div class="uk-card uk-card-body uk-card-primary">Python</div>
+                </li>
+                <li class="tag-backend">
+                  <div class="uk-card uk-card-body uk-card-primary">Java</div>
+                </li>
+                <li class="tag-backend">
+                  <div class="uk-card uk-card-body uk-card-primary">Java</div>
+                </li>
+                <li class="tag-backend">
+                  <div class="uk-card uk-card-body uk-card-primary">MySQL</div>
+                </li>
+                <li class="tag-backend">
+                  <div class="uk-card uk-card-body uk-card-primary">
+                    Laravel
+                  </div>
+                </li>
+
+                <li class="tag-other">
+                  <div
+                    class="uk-card uk-card-body uk-card-secondary"
+                    uk-tooltip="Essential for managing servers"
+                  >
+                    Linux
+                  </div>
+                </li>
+                <li class="tag-other">
+                  <div class="uk-card uk-card-body uk-card-secondary">
+                    Shell-scripting
+                  </div>
+                </li>
+                <li class="tag-other">
+                  <div class="uk-card uk-card-body uk-card-secondary">
+                    Docker
+                  </div>
+                </li>
+                <li class="tag-other">
+                  <div
+                    class="uk-card uk-card-body uk-card-secondary"
+                    uk-tooltip="For version-controlling, gotta 'commit' to the versions you know what I'm saying?"
+                  >
+                    Git/Github Desktop/Git Bash
+                  </div>
+                </li>
+                <li class="tag-other">
+                  <div
+                    class="uk-card uk-card-body uk-card-secondary"
+                    uk-tooltip="Well, someone's gotta test the APIs"
+                  >
+                    Postman
+                  </div>
+                </li>
+                <li class="tag-other">
+                  <div
+                    class="uk-card uk-card-body uk-card-secondary"
+                    uk-tooltip="I only ever used this during my university days, simple & effective for visualizing data"
+                  >
+                    Tableau
+                  </div>
+                </li>
+                <li class="tag-other">
+                  <div
+                    class="uk-card uk-card-body uk-card-secondary"
+                    uk-tooltip="Good 'ol editor"
+                  >
+                    VS Code
+                  </div>
+                </li>
+                <li class="tag-other">
+                  <div class="uk-card uk-card-body uk-card-secondary">
+                    MySQL Workbench
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <div class="uk-section uk-background-cover uk-section-secondary">
+          <div class="uk-container" id="interests">
+            <h1 class="uk-heading-small uk-margin">Interests</h1>
+            <h1 class="uk-heading-divider"></h1>
+            <br />
+
+            <ul
+              class="uk-accordion"
+              uk-accordion="collapsible: true; multiple: true"
+            >
+              <li class="uk-open">
+                <a class="uk-accordion-title" href>
+                  Drums 🥁
+                  <span class="uk-accordion-icon">
+                    <uk-icon icon="chevron-down"></uk-icon>
+                  </span>
+                </a>
+                <div class="uk-accordion-content">
+                  <p>
+                    Graduating as an official Trinity College London-certified
+                    drummer has been a proud milestone in my musical journey,
+                    one that has allowed me to merge technical discipline with
+                    creative expression. Over the past decade, I've had the
+                    privilege of serving as a drummer for my church, where music
+                    isn't just performance—it's a form of worship, unity, and
+                    storytelling.
+                    <br />
+                    Beyond the kit, one of the most rewarding aspects has been
+                    mentoring younger drummers who share the same passion.
+                    Teaching them rudiments, groove dynamics, and stage presence
+                    has reinforced my own understanding of rhythm while
+                    reminding me why I fell in love with drumming in the first
+                    place. There's a special joy in watching a student progress
+                    from hesitant taps to confident, fluid playing—and knowing I
+                    played a small part in their growth.
+                  </p>
                 </div>
-  
-            </div>
-  
-        </div>
-        <br>
-  
-        <div
-          class="uk-section uk-background-cover uk-section-secondary"
-        >
-  
-            <div class="uk-container" id="interests">
-                <h1 class="uk-heading-small uk-margin">Interests</h1>
-                <h1 class="uk-heading-divider"></h1>
-                <br>
-  
-                <ul class="uk-accordion" uk-accordion="collapsible: true; multiple: true">
-                    <li class="uk-open">
-                      <a class="uk-accordion-title" href>
-                        Drums 🥁
-                        <span class="uk-accordion-icon">
-                          <uk-icon icon="chevron-down"></uk-icon>
-                        </span>
-                      </a>
-                      <div class="uk-accordion-content">
-                        <p>
-                          Graduating as an official Trinity College London-certified drummer has been a proud milestone in my musical journey, 
-                          one that has allowed me to merge technical discipline with creative expression. 
-                          Over the past decade, I've had the privilege of serving as a drummer for my church, where music isn't just performance—it's a form of worship, unity, and storytelling.
-                          <br>
-                          Beyond the kit, one of the most rewarding aspects has been mentoring younger drummers who share the same passion. 
-                          Teaching them rudiments, groove dynamics, and stage presence has reinforced my own understanding of rhythm while reminding me why I fell in love with drumming in the first place. 
-                          There's a special joy in watching a student progress from hesitant taps to confident, fluid playing—and knowing I played a small part in their growth.
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <a class="uk-accordion-title" href>
-                        Fitness 💦
-                        <span class="uk-accordion-icon">
-                          <uk-icon icon="chevron-down"></uk-icon>
-                        </span>
-                      </a>
-                      <div class="uk-accordion-content">
-                        <p>
-                            Started gymming early 2025 and which has taught me to lead an organized and discipline lifestyle while reshaping my approach to heath & wellness.
-                            Committing to regular workouts instilled a sense of accountability — Showing up for myself every day
-                            required <u>planning </u>, <u>consistency</u>, and <u>mental resilience</u>.
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <a class="uk-accordion-title" href>
-                        Climbing 🧗
-                        <span class="uk-accordion-icon">
-                          <uk-icon icon="chevron-down"></uk-icon>
-                        </span>
-                      </a>
-                      <div class="uk-accordion-content">
-                        <p> During my tertiary education in 2019, I began climbing actively—starting with top-rope before gradually shifting my focus to <b>bouldering</b> over the years.
-                          <br>
-                          As time passed, I found myself drawn to bouldering—a more dynamic and explosive style of climbing that relies on short, powerful sequences without ropes. The transition pushed me to develop <u>strength</u>, <u>problem-solving skills</u>, and <u>adaptability</u>, as every boulder problem became a puzzle to decode.
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <a class="uk-accordion-title" href>
-                        Caffeine ☕
-                        <span class="uk-accordion-icon">
-                          <uk-icon icon="chevron-down"></uk-icon>
-                        </span>
-                      </a>
-                      <div class="uk-accordion-content">
-                        <p> Operating the coffee machine after weekly Sunday services has been a small but mindful practice that unexpectedly deepened my appreciation for coffee 
-                          At first, it was just about serving a warm drink to the congregation, but as I familiarized myself with the machine—adjusting grind size, dialing in extraction times, and experimenting with milk textures—I began to notice the nuances that separate good coffee from great coffee.
-                          <br>Now, whether it’s pulling a shot of espresso or perfecting latte art, I see coffee as both a craft and a connector—a small but delightful way to bring people together. 
-                        </p>
-                      </div>
-                    </li>
-                </ul>
-  
-            </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title" href>
+                  Fitness 💦
+                  <span class="uk-accordion-icon">
+                    <uk-icon icon="chevron-down"></uk-icon>
+                  </span>
+                </a>
+                <div class="uk-accordion-content">
+                  <p>
+                    Started gymming early 2025 and which has taught me to lead
+                    an organized and discipline lifestyle while reshaping my
+                    approach to heath & wellness. Committing to regular workouts
+                    instilled a sense of accountability — Showing up for myself
+                    every day required <u>planning </u>, <u>consistency</u>, and
+                    <u>mental resilience</u>.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title" href>
+                  Climbing 🧗
+                  <span class="uk-accordion-icon">
+                    <uk-icon icon="chevron-down"></uk-icon>
+                  </span>
+                </a>
+                <div class="uk-accordion-content">
+                  <p>
+                    During my tertiary education in 2019, I began climbing
+                    actively—starting with top-rope before gradually shifting my
+                    focus to <b>bouldering</b> over the years.
+                    <br />
+                    As time passed, I found myself drawn to bouldering—a more
+                    dynamic and explosive style of climbing that relies on
+                    short, powerful sequences without ropes. The transition
+                    pushed me to develop <u>strength</u>,
+                    <u>problem-solving skills</u>, and <u>adaptability</u>, as
+                    every boulder problem became a puzzle to decode.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title" href>
+                  Caffeine ☕
+                  <span class="uk-accordion-icon">
+                    <uk-icon icon="chevron-down"></uk-icon>
+                  </span>
+                </a>
+                <div class="uk-accordion-content">
+                  <p>
+                    Operating the coffee machine after weekly Sunday services
+                    has been a small but mindful practice that unexpectedly
+                    deepened my appreciation for coffee At first, it was just
+                    about serving a warm drink to the congregation, but as I
+                    familiarized myself with the machine—adjusting grind size,
+                    dialing in extraction times, and experimenting with milk
+                    textures—I began to notice the nuances that separate good
+                    coffee from great coffee. <br />Now, whether it’s pulling a
+                    shot of espresso or perfecting latte art, I see coffee as
+                    both a craft and a connector—a small but delightful way to
+                    bring people together.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
         <a id="toTop" class="uk-align-right" href="#" uk-totop></a>
-        <a id="toTop" class="uk-align-right hide-on-small" href="#" uk-totop uk-tooltip="Back to top"></a>
-  
+        <a
+          id="toTop"
+          class="uk-align-right hide-on-small"
+          href="#"
+          uk-totop
+          uk-tooltip="Back to top"
+        ></a>
       </article>
     </main>
 
     <!-- FOOTER START -->
     <footer>
-      <div class="uk-section uk-section-primary" style="padding-bottom: 10px; padding-top: 2rem;">
+      <div
+        class="uk-section uk-section-primary"
+        style="padding-bottom: 10px; padding-top: 2rem"
+      >
         <div class="uk-container uk-text-center">
           <h3 class="uk-heading-small uk-margin">Let's work together!</h3>
 
           <div class="footer-contact">
-            <a href="mailto:ryankhoo_1999@hotmail.com">ryankhoo_1999@hotmail.com</a>
+            <a href="mailto:ryankhoo_1999@hotmail.com"
+              >ryankhoo_1999@hotmail.com</a
+            >
             <span> | </span>
             <span class="footer-social">
-              <a href="https://www.linkedin.com/in/ryan-khoo-lay-king/" target="_blank" aria-label="LinkedIn" >
-                <i class="fa fa-linkedin-square" aria-hidden="true" uk-tooltip="title:https://www.linkedin.com/in/ryan-khoo-lay-king/"></i>
+              <a
+                href="https://www.linkedin.com/in/ryan-khoo-lay-king/"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <i
+                  class="fa fa-linkedin-square"
+                  aria-hidden="true"
+                  uk-tooltip="title:https://www.linkedin.com/in/ryan-khoo-lay-king/"
+                ></i>
               </a>
-              <a href="https://itsdonburi.github.io/" target="_blank" aria-label="GitHub" uk-tooltip="title:https://itsdonburi.github.io/">
+              <a
+                href="https://itsdonburi.github.io/"
+                target="_blank"
+                aria-label="GitHub"
+                uk-tooltip="title:https://itsdonburi.github.io/"
+              >
                 <i class="fa fa-github" aria-hidden="true"></i>
               </a>
-              <a href="#" target="_blank" aria-label="Whatsapp" uk-tooltip="Click to copy contact number">
+              <a
+                href="#"
+                target="_blank"
+                aria-label="Whatsapp"
+                uk-tooltip="Click to copy contact number"
+              >
                 <i class="fa fa-mobile" aria-hidden="true"></i>
               </a>
             </span>
-
           </div>
 
-
           <!-- Copyright -->
-          <p class="footer-copyright">© <span id="year">2025</span> Ryan Khoo Lay King. All rights reserved. Powered by Franken UNO</p>          
-
+          <p class="footer-copyright">
+            © <span id="year">2025</span> Ryan Khoo Lay King. All rights
+            reserved. Powered by Franken UNO
+          </p>
         </div>
       </div>
     </footer>
@@ -483,122 +729,3 @@
   ></script>
   <script src="./index.js"></script>
 </html>
-
-<style>
-
-    html{
-        scroll-behavior: smooth;
-    }
-
-    #toTop > svg {
-      width: 2.5rem;
-      height: 2.5rem;
-      z-index: 1;
-      color: #31473A;
-    }
-
-    #toTop {
-      position: fixed;
-      bottom: 5%;
-      right: 5%;
-    }
-
-  .image-flipper {
-    display: inline-block;
-    position: relative;
-    max-width: inherit
-  }
-
-  .image-container {
-    position: relative;
-    width: 300px;
-    height: 200px;
-    max-width: inherit;
-  }
-
-  .front-image, .back-image {
-    position: absolute;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.6s ease, opacity 0.6s ease;
-    backface-visibility: hidden;
-    cursor: pointer;
-  }
-
-  .back-image {
-    transform: rotateY(180deg);
-    opacity: 0;
-  }
-
-  .flip-trigger:checked ~ .image-container .front-image {
-    transform: rotateY(180deg);
-    opacity: 0;
-  }
-
-  .flip-trigger:checked ~ .image-container .back-image {
-    transform: rotateY(0deg);
-    opacity: 1;
-  }
-
-  .footer-social a {
-    margin: 10px;
-  }
-
-  .employee-information-wrapper {
-    max-width: 100%;
-  }
-
-  @media (min-width: 768px) {
-    .hide-on-big {
-      display: none;
-    }
-  }
-
-  @media (max-width: 767px) {
-    .hide-on-small {
-      display: none;
-    }
-    [uk-tooltip] {
-      /* Disables hover interactions */
-      pointer-events: none !important;
-    }
-  }
-
-  #img1 {
-    width: 100%; 
-    height: 100%;
-  }
-
-  #img2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: inherit;
-    width: 100%;
-  }
-
-  .image-container-small img {
-    transition: opacity 0.5s ease-in-out;
-  }
-
-  .image-container-small img:not(.visible) {
-    opacity: 0;
-  }
-
-  .employee-information-wrapper-small div.uk-grid {
-    margin-top: .5rem !important;
-  }
-
-  .employee-characteristics-wrapper {
-    margin-top: 1rem;
-  }
-
-  .employee-characteristics-wrapper span{
-    margin-left: .25rem;
-    margin-right: .25rem;
-    margin-top: .75rem;
-  }
-
- 
-  /* #31473A, #EDF4F2 */
-</style>
